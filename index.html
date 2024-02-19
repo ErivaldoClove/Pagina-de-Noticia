@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 1em;
+        }
+
+        article {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            padding: 1em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        /* Media Query para telas menores, onde o layout será em coluna */
+        @media screen and (max-width: 600px) {
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Notícias do Dia</h1>
+    </header>
+
+    <section>
+        <article>
+            <div class="content">
+                <h2>Título da Notícia 1</h2>
+                <img src="./img/card1.jpg" alt="Imagem Notícia 1">
+                <p>Descrição breve da notícia. Pode conter algumas informações importantes.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </article>
+
+        <article>
+            <div class="content">
+                <h2>Título da Notícia 2</h2>
+                <img src="./img/card2.jpg" alt="Imagem Notícia 2">
+                <p>Outra notícia interessante com detalhes relevantes.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </article>
+
+        <article>
+            <div class="content">
+                <h2>Título da Notícia 3</h2>
+                <img src="./img/card3.jpg" alt="Imagem Notícia 3">
+                <p>Mais uma notícia importante para manter você informado.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Notícias do Dia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
